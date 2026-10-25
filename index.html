@@ -946,7 +946,15 @@ section[id] { scroll-margin-top: 72px; }
   gap: 12px;
   align-items: center;
   max-width: 270px;
+  text-decoration: none;
+  color: inherit;
+  transition: transform .2s ease, box-shadow .2s ease;
 }
+.hero__plakietka-link { display: block; max-height: 0; overflow: hidden; opacity: 0; font-style: normal; font-size: .85rem; font-weight: 700; color: var(--fiolet); white-space: nowrap; transition: max-height .25s ease, opacity .2s ease, margin-top .25s ease; }
+.hero__plakietka:hover, .hero__plakietka:focus-visible { transform: translateY(-3px); }
+.hero__plakietka:hover .hero__plakietka-link, .hero__plakietka:focus-visible .hero__plakietka-link { max-height: 1.6em; opacity: 1; margin-top: 4px; }
+.hero__plakietka:focus-visible { outline: 3px solid var(--fiolet); outline-offset: 3px; }
+@media (hover: none) { .hero__plakietka-link { max-height: 1.6em; opacity: 1; margin-top: 4px; } }
 .hero__plakietka strong { display: block; color: var(--fiolet-ciemny); font-size: 1rem; }
 .hero__plakietka span { font-size: .85rem; color: var(--szary); line-height: 1.35; display: block; }
 .hero__plakietka svg { width: 34px; height: 34px; color: var(--sliwka); flex: none; }
@@ -1263,6 +1271,7 @@ section[id] { scroll-margin-top: 72px; }
   .hero__plakietka { right: 12px; left: auto; bottom: -22px; padding: 10px 14px; max-width: 230px; }
   .hero__plakietka svg { width: 26px; height: 26px; }
   .hero__plakietka span { display: none; }
+  .hero__plakietka-link { white-space: normal; }
 }
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }
@@ -1352,10 +1361,10 @@ section[id] { scroll-margin-top: 72px; }
       <div class="hero__zdjecie">
         <svg class="hero__serce" viewBox="0 0 100 90" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-width="6" d="M50 84C20 62 4 44 4 26 4 13 14 4 26 4c10 0 18 6 24 15C56 10 64 4 74 4c12 0 22 9 22 22 0 18-16 36-46 58z"/></svg>
         <img src="img-gabinet-kwadrat.jpg" width="1000" height="1000" alt="Gabinet depilacji laserowej w salonie Beautiful Skin w Dąbrowie Górniczej: napis DEPILACJA na drzwiach, laser, fotel zabiegowy z ręcznikiem i okno" fetchpriority="high">
-        <div class="hero__plakietka">
+        <a class="hero__plakietka" href="https://depilacja.pl/salony/depilacja-laserowa/dabrowa-gornicza/" target="_blank" rel="noopener" aria-label="Salon Partnerski Depilacja.pl. Zobacz nasz salon na stronie depilacja.pl (otwiera się w nowej karcie)">
           <svg><use href="#i-gwiazda"/></svg>
-          <div><strong>Salon Partnerski Depilacja.pl</strong></div>
-        </div>
+          <div><strong>Salon Partnerski Depilacja.pl</strong><em class="hero__plakietka-link">Zobacz nas na depilacja.pl →</em></div>
+        </a>
       </div>
     </div>
   </section>
