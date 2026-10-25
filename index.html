@@ -874,8 +874,21 @@ section[id] { scroll-margin-top: 72px; }
 .menu { display: flex; gap: 22px; }
 .menu a { color: var(--tekst); text-decoration: none; font-weight: 600; font-size: .95rem; white-space: nowrap; }
 .gora .przycisk { white-space: nowrap; }
-@media (max-width: 1260px) { .menu { display: none; } }
 .menu a:hover { color: var(--fiolet); }
+.menu-przycisk { display: none; width: 46px; height: 46px; border: 1px solid var(--linia); border-radius: 12px; background: #fff; color: var(--fiolet-ciemny); cursor: pointer; align-items: center; justify-content: center; flex: none; padding: 0; }
+.menu-przycisk svg { width: 24px; height: 24px; }
+.menu-przycisk .ikona-zamknij { display: none; }
+.menu-przycisk[aria-expanded="true"] .ikona-otworz { display: none; }
+.menu-przycisk[aria-expanded="true"] .ikona-zamknij { display: block; }
+@media (max-width: 1260px) {
+  .gora__wnetrze { justify-content: flex-start; }
+  .gora__wnetrze .przycisk--glowny { margin-left: auto; }
+  .menu-przycisk { display: inline-flex; }
+  .menu { display: none; position: absolute; top: 100%; left: 0; right: 0; flex-direction: column; gap: 0; background: #fbf9fc; border-bottom: 1px solid var(--linia); box-shadow: 0 14px 28px rgba(60, 30, 90, .14); padding: 8px 16px 16px; max-height: calc(100vh - 80px); overflow-y: auto; }
+  .menu.otwarte { display: flex; }
+  .menu a { padding: 15px 8px; font-size: 1.05rem; border-bottom: 1px solid var(--linia); white-space: normal; }
+  .menu a:last-child { border-bottom: 0; }
+}
 .gora .przycisk { padding: 11px 20px; font-size: .95rem; }
 
 /* Hero */
@@ -1187,7 +1200,6 @@ section[id] { scroll-margin-top: 72px; }
 .zadzwon-mobile .przycisk { width: 100%; padding: 16px; font-size: 1.05rem; }
 
 @media (max-width: 980px) {
-  .menu { display: none; }
   .okolice { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   .kroki { grid-template-columns: repeat(2, minmax(0, 1fr)); row-gap: 36px; }
   .zabiegi { grid-template-columns: 1fr; }
@@ -1209,6 +1221,7 @@ section[id] { scroll-margin-top: 72px; }
 @media (max-width: 560px) {
   body { font-size: 16px; }
   .gora .przycisk { display: none; }
+  .gora__wnetrze .menu-przycisk { margin-left: auto; }
   .marka__opis { display: none; }
   .atuty { grid-template-columns: 1fr; }
   .promocje { grid-template-columns: 1fr; }
@@ -1259,7 +1272,7 @@ section[id] { scroll-margin-top: 72px; }
       <img src="img-logo-male.png" width="120" height="102" alt="Logo Beautiful Skin">
       <span class="marka__nazwa">BEAUTIFUL SKIN<span class="marka__opis">Salon kosmetologii estetycznej</span></span>
     </a>
-    <nav class="menu" aria-label="Menu główne">
+    <nav class="menu" id="menu-glowne" aria-label="Menu główne">
       <a href="#depilacja">Depilacja laserowa</a>
       <a href="#endermologia">Endermologia</a>
       <a href="#cennik">Cennik</a>
@@ -1269,6 +1282,10 @@ section[id] { scroll-margin-top: 72px; }
       <a href="#kontakt">Kontakt</a>
     </nav>
     <a class="przycisk przycisk--glowny" href="tel:+48508421376"><svg><use href="#i-tel"/></svg>508 421 376</a>
+    <button class="menu-przycisk" type="button" aria-label="Otwórz menu" aria-expanded="false" aria-controls="menu-glowne">
+      <svg class="ikona-otworz" viewBox="0 0 24 24" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" d="M4 7h16M4 12h16M4 17h16"/></svg>
+      <svg class="ikona-zamknij" viewBox="0 0 24 24" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" d="M6 6l12 12M18 6L6 18"/></svg>
+    </button>
   </div>
 </header>
 
@@ -1711,6 +1728,20 @@ document.querySelectorAll("a[data-czesci]").forEach(function (karta) {
   document.querySelectorAll("[data-po]").forEach(function (el) {
     if (el.getAttribute("data-po") < dzis) el.hidden = false;
   });
+})();
+// Rozwijane menu (trzy kreski) w widoku mobilnym i na tablecie.
+(function () {
+  var przycisk = document.querySelector(".menu-przycisk");
+  var menu = document.getElementById("menu-glowne");
+  if (!przycisk || !menu) return;
+  function ustaw(otwarte) {
+    menu.classList.toggle("otwarte", otwarte);
+    przycisk.setAttribute("aria-expanded", otwarte ? "true" : "false");
+    przycisk.setAttribute("aria-label", otwarte ? "Zamknij menu" : "Otwórz menu");
+  }
+  przycisk.addEventListener("click", function () { ustaw(!menu.classList.contains("otwarte")); });
+  menu.addEventListener("click", function (z) { if (z.target.closest("a")) ustaw(false); });
+  document.addEventListener("keydown", function (z) { if (z.key === "Escape") ustaw(false); });
 })();
 (function () {
   var pasek = document.querySelector(".zadzwon-mobile");
