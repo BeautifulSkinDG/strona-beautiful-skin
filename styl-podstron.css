@@ -93,12 +93,12 @@ section[id] { scroll-margin-top: 72px; }
   backdrop-filter: saturate(1.4) blur(10px);
   border-bottom: 1px solid var(--linia);
 }
-.gora__wnetrze { display: flex; align-items: center; justify-content: space-between; gap: 16px; min-height: 72px; width: min(1360px, 100% - 32px); }
-.marka { display: flex; align-items: center; gap: 12px; text-decoration: none; color: var(--fiolet-ciemny); }
+.gora__wnetrze { display: flex; align-items: center; justify-content: space-between; gap: 16px; min-height: 72px; width: min(1400px, 100% - 32px); }
+.marka { display: flex; flex: none; align-items: center; gap: 12px; text-decoration: none; color: var(--fiolet-ciemny); }
 .marka img { width: 52px; }
 .marka__nazwa { white-space: nowrap; font-family: var(--naglowek); font-size: 1.45rem; font-weight: 700; letter-spacing: .04em; line-height: 1; }
 .marka__opis { display: block; font-family: var(--tresc); font-size: .66rem; letter-spacing: .16em; text-transform: uppercase; color: var(--szary); margin-top: 4px; }
-.menu { display: flex; gap: 22px; }
+.menu { display: flex; gap: 15px; }
 .menu a { color: var(--tekst); text-decoration: none; font-weight: 600; font-size: .95rem; white-space: nowrap; }
 .gora .przycisk { white-space: nowrap; }
 .menu a:hover { color: var(--fiolet); }
@@ -107,16 +107,40 @@ section[id] { scroll-margin-top: 72px; }
 .menu-przycisk .ikona-zamknij { display: none; }
 .menu-przycisk[aria-expanded="true"] .ikona-otworz { display: none; }
 .menu-przycisk[aria-expanded="true"] .ikona-zamknij { display: block; }
-@media (max-width: 1400px) {
+@media (max-width: 1440px) {
   .gora__wnetrze { justify-content: flex-start; }
-  .gora__wnetrze .przycisk--glowny { margin-left: auto; }
+  .gora__wnetrze .social { margin-left: auto; }
   .menu-przycisk { display: inline-flex; }
   .menu { display: none; position: absolute; top: 100%; left: 0; right: 0; flex-direction: column; gap: 0; background: #fbf9fc; border-bottom: 1px solid var(--linia); box-shadow: 0 14px 28px rgba(60, 30, 90, .14); padding: 8px 16px 16px; max-height: calc(100vh - 80px); overflow-y: auto; }
   .menu.otwarte { display: flex; }
   .menu a { padding: 15px 8px; font-size: 1.05rem; border-bottom: 1px solid var(--linia); white-space: normal; }
-  .menu a:last-child { border-bottom: 0; }
+  .menu > a:last-of-type { border-bottom: 0; }
 }
 .gora .przycisk { padding: 11px 20px; font-size: .95rem; }
+.tel-zadzwon { display: none; }
+.social { display: flex; gap: 5px; flex: none; }
+.social a { display: inline-flex; align-items: center; justify-content: center; width: 34px; height: 34px; border-radius: 50%; color: #fff; transition: transform .15s ease, filter .15s ease; }
+.social a:hover { transform: translateY(-1px); filter: brightness(1.1); }
+.social svg { width: 18px; height: 18px; }
+.social--fb { background: #1877f2; }
+.social--ig { background: linear-gradient(45deg, #f09433 0%, #dc2743 55%, #bc1888 100%); }
+.social--tt { background: #111; }
+.menu__social { display: none; }
+.menu .menu__social a, .menu .menu__social a:hover { color: #fff; }
+.menu .menu__social a { padding: 0; border: 0; width: 44px; height: 44px; }
+.menu .menu__social svg { width: 22px; height: 22px; }
+@media (max-width: 760px) {
+  .gora__wnetrze > .social { display: none; }
+  .menu .menu__social { display: flex; gap: 12px; padding: 16px 8px 4px; margin-left: 0; }
+  .gora__wnetrze .gora__tel { margin-left: auto; }
+}
+@media (max-width: 620px) {
+  .tel-numer { display: none; }
+  .tel-zadzwon { display: inline; }
+}
+@media (max-width: 340px) {
+  .gora__tel svg { display: none; }
+}
 
 /* Hero */
 .hero { position: relative; overflow: hidden; padding: clamp(40px, 6vw, 80px) 0 clamp(64px, 8vw, 104px); }
@@ -455,8 +479,14 @@ section[id] { scroll-margin-top: 72px; }
 }
 @media (max-width: 560px) {
   body { font-size: 16px; }
-  .gora .przycisk { display: none; }
-  .gora__wnetrze .menu-przycisk { margin-left: auto; }
+  .gora__wnetrze { gap: 10px; }
+  .gora__wnetrze .gora__tel { margin-left: auto; gap: 6px; }
+  .marka { gap: 8px; }
+  .marka img { width: 40px; }
+  .marka__nazwa { font-size: 1.1rem; }
+  .gora__wnetrze .gora__tel { padding: 9px 13px; font-size: .9rem; }
+  .gora__wnetrze .gora__tel svg { width: 17px; height: 17px; }
+  .menu-przycisk { width: 42px; height: 42px; }
   .marka__opis { display: none; }
   .atuty { grid-template-columns: 1fr; }
   .promocje { grid-template-columns: 1fr; }
@@ -481,6 +511,12 @@ section[id] { scroll-margin-top: 72px; }
   .hero__plakietka svg { width: 26px; height: 26px; }
   .hero__plakietka span { display: none; }
   .hero__plakietka-link { white-space: normal; }
+}
+@media (max-width: 400px) {
+  .gora__wnetrze { gap: 8px; }
+  .marka img { width: 30px; }
+  .marka__nazwa { font-size: .92rem; letter-spacing: .02em; }
+  .gora__wnetrze .gora__tel { padding: 9px 11px; gap: 5px; }
 }
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }

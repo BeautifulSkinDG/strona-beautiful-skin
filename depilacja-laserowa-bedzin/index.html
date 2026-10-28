@@ -107,6 +107,9 @@
     <symbol id="i-pin" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0z"/><circle cx="12" cy="10" r="3"/></g></symbol>
     <symbol id="i-mail" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 6L2 7"/></g></symbol>
     <symbol id="i-gwiazda" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" d="m12 2 3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1z"/></symbol>
+    <symbol id="i-fb" viewBox="0 0 24 24"><path fill="currentColor" d="M13.5 22v-8.2h2.8l.5-3.3h-3.3V8.4c0-.9.4-1.7 1.8-1.7h1.6V3.9s-1.4-.3-2.8-.3c-2.8 0-4.5 1.7-4.5 4.7v2.2H6.5v3.3h2.7V22z"/></symbol>
+    <symbol id="i-ig" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.4" cy="6.6" r=".6" fill="currentColor"/></g></symbol>
+    <symbol id="i-tt" viewBox="0 0 24 24"><path fill="currentColor" d="M16.6 3c.3 2.3 1.6 3.7 3.9 3.9v3.1c-1.4.1-2.7-.3-3.9-1.1v5.9c0 3.7-2.5 6.1-5.8 6.1-3.2 0-5.6-2.4-5.6-5.5 0-3.4 2.9-5.9 6.4-5.4v3.2c-1.8-.5-3.2.4-3.2 2.1 0 1.2 1 2.1 2.2 2.1 1.4 0 2.2-.9 2.2-2.4V3z"/></symbol>
   </defs>
 </svg>
 
@@ -125,8 +128,18 @@
       <a href="/#jak-to-wyglada">Jak to wygląda</a>
       <a href="/#pytania">Pytania</a>
       <a href="/#kontakt">Kontakt</a>
+      <div class="social menu__social">
+        <a class="social--fb" href="https://www.facebook.com/beautifulskindg" rel="noopener" aria-label="Facebook"><svg aria-hidden="true"><use href="#i-fb"/></svg></a>
+        <a class="social--ig" href="https://www.instagram.com/beautifulskindg/" rel="noopener" aria-label="Instagram"><svg aria-hidden="true"><use href="#i-ig"/></svg></a>
+        <a class="social--tt" href="https://www.tiktok.com/@beautiful.skin_dg" rel="noopener" aria-label="TikTok"><svg aria-hidden="true"><use href="#i-tt"/></svg></a>
+      </div>
     </nav>
-    <a class="przycisk przycisk--glowny" href="tel:+48508421376"><svg><use href="/#i-tel"/></svg>508 421 376</a>
+    <div class="social">
+      <a class="social--fb" href="https://www.facebook.com/beautifulskindg" rel="noopener" aria-label="Facebook" title="Facebook"><svg aria-hidden="true"><use href="#i-fb"/></svg></a>
+      <a class="social--ig" href="https://www.instagram.com/beautifulskindg/" rel="noopener" aria-label="Instagram" title="Instagram"><svg aria-hidden="true"><use href="#i-ig"/></svg></a>
+      <a class="social--tt" href="https://www.tiktok.com/@beautiful.skin_dg" rel="noopener" aria-label="TikTok" title="TikTok"><svg aria-hidden="true"><use href="#i-tt"/></svg></a>
+    </div>
+    <a class="przycisk przycisk--glowny gora__tel" href="tel:+48508421376" aria-label="Zadzwoń: 508 421 376"><svg aria-hidden="true"><use href="#i-tel"/></svg><span class="tel-numer">508 421 376</span><span class="tel-zadzwon">Zadzwoń</span></a>
     <button class="menu-przycisk" type="button" aria-label="Otwórz menu" aria-expanded="false" aria-controls="menu-glowne">
       <svg class="ikona-otworz" viewBox="0 0 24 24" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" d="M4 7h16M4 12h16M4 17h16"/></svg>
       <svg class="ikona-zamknij" viewBox="0 0 24 24" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" d="M6 6l12 12M18 6L6 18"/></svg>
@@ -189,13 +202,13 @@
         <span class="etykieta" style="color:#cdb8f0">Kontakt</span>
         <h2 id="kontakt-tytul">Umów depilację laserową</h2>
         <ul class="dane">
-          <li><svg><use href="/#i-pin"/></svg><div><strong>Beautiful Skin – Depilacja.pl</strong>ul. Jana III Sobieskiego 19/1, 1 piętro<br>41-300 Dąbrowa Górnicza</div></li>
-          <li><svg><use href="/#i-tel"/></svg><div><strong>Telefon</strong><a href="tel:+48508421376">508 421 376</a></div></li>
-          <li><svg><use href="/#i-mail"/></svg><div><strong>E-mail</strong><a href="mailto:info@beautifulskindg.pl">info@beautifulskindg.pl</a></div></li>
+          <li><svg><use href="#i-pin"/></svg><div><strong>Beautiful Skin – Depilacja.pl</strong>ul. Jana III Sobieskiego 19/1, 1 piętro<br>41-300 Dąbrowa Górnicza</div></li>
+          <li><svg><use href="#i-tel"/></svg><div><strong>Telefon</strong><a href="tel:+48508421376">508 421 376</a></div></li>
+          <li><svg><use href="#i-mail"/></svg><div><strong>E-mail</strong><a href="mailto:info@beautifulskindg.pl">info@beautifulskindg.pl</a></div></li>
         </ul>
         <div class="mapy">
-          <a class="przycisk przycisk--glowny" href="tel:+48508421376"><svg><use href="/#i-tel"/></svg>Zadzwoń</a>
-          <a class="przycisk przycisk--obrys" href="mailto:info@beautifulskindg.pl"><svg><use href="/#i-mail"/></svg>Napisz e-mail</a>
+          <a class="przycisk przycisk--glowny" href="tel:+48508421376"><svg><use href="#i-tel"/></svg>Zadzwoń</a>
+          <a class="przycisk przycisk--obrys" href="mailto:info@beautifulskindg.pl"><svg><use href="#i-mail"/></svg>Napisz e-mail</a>
         </div>
       </div>
       <div class="kontakt__karta">
@@ -215,13 +228,13 @@
         <p class="dojazd__opis">Salon jest na pierwszym piętrze kamienicy przy ul. Jana III Sobieskiego 19/1. Parking dla klientów jest za kamienicą.</p>
         <div class="mapa" id="mapa" data-src="https://www.google.com/maps?q=Jana+III+Sobieskiego+19%2C+41-300+D%C4%85browa+G%C3%B3rnicza&amp;z=17&amp;output=embed">
           <div class="mapa__start">
-            <button type="button" class="przycisk przycisk--glowny" id="mapa-pokaz"><svg><use href="/#i-pin"/></svg>Pokaż mapę</button>
+            <button type="button" class="przycisk przycisk--glowny" id="mapa-pokaz"><svg><use href="#i-pin"/></svg>Pokaż mapę</button>
             <small>Po kliknięciu mapa załaduje się z serwisu Google.</small>
           </div>
         </div>
         <div class="mapy">
-          <a class="przycisk przycisk--obrys" href="https://www.google.com/maps/search/?api=1&amp;query=Beautiful+Skin+Jana+III+Sobieskiego+19+D%C4%85browa+G%C3%B3rnicza" rel="noopener"><svg><use href="/#i-pin"/></svg>Mapy Google</a>
-          <a class="przycisk przycisk--obrys" href="https://maps.apple.com/place?auid=17235912654578450200" rel="noopener"><svg><use href="/#i-pin"/></svg>Mapy Apple</a>
+          <a class="przycisk przycisk--obrys" href="https://www.google.com/maps/search/?api=1&amp;query=Beautiful+Skin+Jana+III+Sobieskiego+19+D%C4%85browa+G%C3%B3rnicza" rel="noopener"><svg><use href="#i-pin"/></svg>Mapy Google</a>
+          <a class="przycisk przycisk--obrys" href="https://maps.apple.com/place?auid=17235912654578450200" rel="noopener"><svg><use href="#i-pin"/></svg>Mapy Apple</a>
         </div>
       </div>
     </div>
