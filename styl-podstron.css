@@ -400,7 +400,7 @@ section[id] { scroll-margin-top: 72px; }
 .faq details > div p:last-child { margin: 0; }
 
 /* Inne zabiegi */
-.zabiegi { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px; }
+.zabiegi { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 16px; }
 .ender { display: grid; grid-template-columns: 1.1fr .9fr; gap: clamp(32px, 5vw, 64px); align-items: center; }
 .ender__prawa { display: grid; gap: 16px; }
 .ender__zdjecie { margin: 0; position: relative; overflow: hidden; border-radius: var(--promien); aspect-ratio: 4 / 3; background: var(--fiolet-jasny); }
