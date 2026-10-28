@@ -917,12 +917,17 @@ section[id] { scroll-margin-top: 72px; }
 .social--ig { background: linear-gradient(45deg, #f09433 0%, #dc2743 55%, #bc1888 100%); }
 .social--tt { background: #111; }
 .menu__social { display: none; }
+.gora__pasek { display: none; align-items: center; justify-content: center; gap: 10px; padding: 6px 16px; background: var(--fiolet-jasny); border-bottom: 1px solid var(--linia); font-size: .85rem; font-weight: 600; color: var(--fiolet-ciemny); }
+.gora__pasek .social a { width: 30px; height: 30px; }
+.gora__pasek .social svg { width: 16px; height: 16px; }
 .menu .menu__social a, .menu .menu__social a:hover { color: #fff; }
 .menu .menu__social a { padding: 0; border: 0; width: 44px; height: 44px; }
 .menu .menu__social svg { width: 22px; height: 22px; }
 @media (max-width: 760px) {
   .gora__wnetrze > .social { display: none; }
-  .menu .menu__social { display: flex; gap: 12px; padding: 16px 8px 4px; margin-left: 0; }
+  .gora__pasek { display: flex; }
+  section[id] { scroll-margin-top: 116px; }
+  .menu { max-height: calc(100vh - 124px); }
   .gora__wnetrze .gora__tel { margin-left: auto; }
 }
 @media (max-width: 620px) {
@@ -1313,6 +1318,11 @@ section[id] { scroll-margin-top: 72px; }
   html { scroll-behavior: auto; }
   .przycisk { transition: none; }
 }
+/* Wyższy nagłówek na telefonie (pasek Obserwuj nas) */
+@media (max-width: 760px) {
+  #zabiegi-na-twarz { scroll-margin-top: 134px; }
+  .cennik__lista li[data-czesc] { scroll-margin-top: 154px; }
+}
 </style>
 </head>
 <body>
@@ -1333,6 +1343,14 @@ section[id] { scroll-margin-top: 72px; }
 </svg>
 
 <header class="gora">
+  <div class="gora__pasek">
+    <span>Obserwuj nas:</span>
+    <div class="social">
+      <a class="social--fb" href="https://www.facebook.com/beautifulskindg" rel="noopener" aria-label="Facebook"><svg aria-hidden="true"><use href="#i-fb"/></svg></a>
+      <a class="social--ig" href="https://www.instagram.com/beautifulskindg/" rel="noopener" aria-label="Instagram"><svg aria-hidden="true"><use href="#i-ig"/></svg></a>
+      <a class="social--tt" href="https://www.tiktok.com/@beautiful.skin_dg" rel="noopener" aria-label="TikTok"><svg aria-hidden="true"><use href="#i-tt"/></svg></a>
+    </div>
+  </div>
   <div class="kontener gora__wnetrze">
     <a class="marka" href="#">
       <img src="img-logo-male.png" width="120" height="102" alt="Logo Beautiful Skin">
