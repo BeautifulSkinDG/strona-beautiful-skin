@@ -80,9 +80,9 @@
   },
   "amenityFeature": [
     {"@type": "LocationFeatureSpecification", "name": "Parking", "value": true},
-    {"@type": "LocationFeatureSpecification", "name": "Płatność kartą", "value": true}
+    {"@type": "LocationFeatureSpecification", "name": "Płatność kartą, gotówką oraz online", "value": true}
   ],
-  "paymentAccepted": "Gotówka, karta płatnicza",
+  "paymentAccepted": "Gotówka, karta płatnicza, płatność online",
   "sameAs": [
     "https://www.facebook.com/beautifulskindg",
     "https://www.instagram.com/beautifulskindg/",
@@ -403,7 +403,16 @@
    "@type": "Offer",
    "itemOffered": {
     "@type": "Service",
-    "name": "Pakiet Roczny depilacji laserowej – 1 partia ciała"
+    "name": "Pakiet Roczny depilacji laserowej – 1 mała partia ciała"
+   },
+   "price": "799.00",
+   "priceCurrency": "PLN"
+  },
+  {
+   "@type": "Offer",
+   "itemOffered": {
+    "@type": "Service",
+    "name": "Pakiet Roczny depilacji laserowej – 1 duża partia ciała"
    },
    "price": "1699.00",
    "priceCurrency": "PLN"
@@ -439,15 +448,6 @@
    "@type": "Offer",
    "itemOffered": {
     "@type": "Service",
-    "name": "Pakiet Roczny depilacji laserowej – dodatkowa mała partia ciała"
-   },
-   "price": "399.00",
-   "priceCurrency": "PLN"
-  },
-  {
-   "@type": "Offer",
-   "itemOffered": {
-    "@type": "Service",
     "name": "Paczka Light depilacji laserowej (6 zabiegów)"
    },
    "price": "1290.00",
@@ -469,6 +469,51 @@
     "name": "Paczka Platinium depilacji laserowej (20 zabiegów)"
    },
    "price": "3199.00",
+   "priceCurrency": "PLN"
+  },
+  {
+   "@type": "Offer",
+   "itemOffered": {
+    "@type": "Service",
+    "name": "Endermologia – pakiet 5 zabiegów, 1 dowolna partia ciała"
+   },
+   "price": "599.00",
+   "priceCurrency": "PLN"
+  },
+  {
+   "@type": "Offer",
+   "itemOffered": {
+    "@type": "Service",
+    "name": "Endermologia – pakiet 5 zabiegów, całe nogi: łydki + uda"
+   },
+   "price": "799.00",
+   "priceCurrency": "PLN"
+  },
+  {
+   "@type": "Offer",
+   "itemOffered": {
+    "@type": "Service",
+    "name": "Endermologia – pakiet 5 zabiegów, uda + pośladki"
+   },
+   "price": "949.00",
+   "priceCurrency": "PLN"
+  },
+  {
+   "@type": "Offer",
+   "itemOffered": {
+    "@type": "Service",
+    "name": "Endermologia – pakiet 5 zabiegów, brzuch + uda + pośladki"
+   },
+   "price": "1099.00",
+   "priceCurrency": "PLN"
+  },
+  {
+   "@type": "Offer",
+   "itemOffered": {
+    "@type": "Service",
+    "name": "Endermologia – pakiet 5 zabiegów, całe ciało"
+   },
+   "price": "1199.00",
    "priceCurrency": "PLN"
   },
   {
@@ -628,7 +673,7 @@
    "@type": "Offer",
    "itemOffered": {
     "@type": "Service",
-    "name": "Lifting Bez Igieł PRX-T33 (twarz)"
+    "name": "PRX-T33 Lifting Bez Igieł (twarz)"
    },
    "price": "350.00",
    "priceCurrency": "PLN"
@@ -736,7 +781,7 @@
    "name": "Ile zabiegów depilacji laserowej potrzeba?",
    "acceptedAnswer": {
     "@type": "Answer",
-    "text": "Depilacja laserowa to seria zabiegów, bo laser działa na włosy w fazie wzrostu, a nie wszystkie rosną w tym samym czasie. Najczęściej potrzeba kilku zabiegów w odstępach kilku tygodni. Dokładną liczbę i odstępy ustala kosmetolog – zależą od partii ciała, rodzaju włosów i gospodarki hormonalnej."
+    "text": "Depilacja laserowa to seria zabiegów, bo laser działa na włosy w fazie wzrostu czyli anagenu, nie wszystkie rosną w tym samym czasie. Najczęściej potrzeba kilku zabiegów w odstępach kilku tygodni. Dokładną liczbę i odstępy ustala kosmetolog – zależą one od partii ciała, rodzaju włosów oraz gospodarki hormonalnej."
    }
   },
   {
@@ -744,7 +789,7 @@
    "name": "Czy macie gwarancję efektów depilacji laserowej?",
    "acceptedAnswer": {
     "@type": "Answer",
-    "text": "Tak. Do każdego Pakietu Rocznego dostajesz bezpłatnie Certyfikat Gwarancji Efektów: po serii 9 zabiegów owłosienia jest nawet do 95% mniej. Warunki: 9 zabiegów na tę samą partię ciała co 4–8 tygodni, stosowanie się do zaleceń przed zabiegiem i po nim, żadnych leków ani terapii, które osłabiają działanie lasera, i informowanie kosmetologa o zmianach w zdrowiu. Laser najlepiej działa na ciemne włosy, jasne i siwe mogą zostać."
+    "text": "Tak. Do każdego Pakietu Rocznego dostajesz bezpłatnie Certyfikat Gwarancji Efektów: po serii 9 zabiegów owłosienia jest nawet do 95% mniej. Warunki: 9 zabiegów na tę samą partię ciała co 4–8 tygodni, stosowanie się do zaleceń przed zabiegiem jak i po nim, żadnych leków ani terapii, które osłabiają działanie lasera, informowanie kosmetologa o zmianach w zdrowiu. Laser najlepiej zadziała na ciemne włosy, laser nie usunie jasnych oraz siwych włosów z uwagi na brak melaniny."
    }
   },
   {
@@ -752,7 +797,7 @@
    "name": "Czy depilacja laserowa boli?",
    "acceptedAnswer": {
     "@type": "Answer",
-    "text": "Każdy odczuwa to trochę inaczej. Najczęściej klientki i klienci mówią o cieple albo lekkim mrowieniu. Kosmetolog ustawia laser pod Twoją skórę i w trakcie zabiegu pyta, czy wszystko w porządku."
+    "text": "Najczęściej klientki i klienci mówią o odczuwanym cieple albo o lekkim mrowieniu. Kosmetolog ustawia parametry indywidualnie pod Twoją skórę i w trakcie zabiegu dba o Twój komfort."
    }
   },
   {
@@ -760,7 +805,7 @@
    "name": "Ile kosztuje depilacja laserowa w Dąbrowie Górniczej?",
    "acceptedAnswer": {
     "@type": "Answer",
-    "text": "Pojedynczy zabieg na małą partię ciała (np. wąsik, dłonie, stopy) kosztuje 149 zł, a na większą (np. pachy, bikini, łydki) 259 zł. Pakiet Roczny – 9 zabiegów na 1 partię ciała – kosztuje 1 699 zł. Konsultacja przed zabiegami kosztuje 1 zł. Pełny cennik i aktualne promocje są w sekcji Cennik na tej stronie, a w razie pytań zadzwoń pod numer 508 421 376."
+    "text": "Pojedynczy zabieg na małą partię ciała (np. wąsik, dłonie, stopy) kosztuje 149 zł, a na większą (np. pachy, bikini, łydki) 259 zł. Pakiet Roczny – 9 zabiegów na 1 partię ciała – kosztuje 1 699 zł. Konsultacja przed zabiegami kosztuje symbolicznie 1 zł. Pełny cennik i aktualne promocje są w sekcji Cennik na tej stronie, w razie pytań pozostajemy do dyspozycji pod numerem 508 421 376."
    }
   },
   {
@@ -784,7 +829,7 @@
    "name": "Czy są przeciwwskazania do depilacji laserowej?",
    "acceptedAnswer": {
     "@type": "Answer",
-    "text": "Tak. Należą do nich między innymi ciąża, świeża opalenizna, przyjmowanie leków światłouczulających oraz stany zapalne i zmiany skórne w miejscu zabiegu. Przed pierwszym zabiegiem kosmetolog przeprowadza wywiad i decyduje o kwalifikacji."
+    "text": "Tak. Zabiegu nie wykonujemy w ciąży ani podczas karmienia piersią. Zabieg odkładamy też na później, gdy występuje: świeża opalenizna, także po solarium lub samoopalaczu; leki światłouczulające, np. retinoidy (kurację trzeba zakończyć co najmniej 6 miesięcy przed zabiegiem), oraz zioła, takie jak dziurawiec, nagietek czy rumianek; wysypka, podrażnienie, stan zapalny, rana albo opryszczka w miejscu zabiegu. Całkowite przeciwwskazania, przy których depilacji laserowej nie wykonujemy: padaczka (epilepsja), choroba nowotworowa, bielactwo, łuszczyca. Przed pierwszym zabiegiem kosmetolog przeprowadza wywiad i decyduje o kwalifikacji."
    }
   },
   {
@@ -800,7 +845,7 @@
    "name": "Co to jest endermologia i dla kogo jest ten zabieg?",
    "acceptedAnswer": {
     "@type": "Answer",
-    "text": "Endermologia to masaż podciśnieniowy skóry i tkanki podskórnej. Poprawia wygląd i jędrność skóry i pomaga wymodelować sylwetkę. Często wybierają ją osoby, które chcą zadbać o skórę z cellulitem. Efekty są indywidualne, a najlepsze daje seria zabiegów. Czy to zabieg dla Ciebie, omówimy na wizycie."
+    "text": "Endermologia to masaż podciśnieniowy skóry i tkanki podskórnej. Poprawia wygląd i jędrność skóry oraz pomaga wymodelować sylwetkę. Często wybierają ją osoby, które chcą zadbać o skórę z widocznym cellulitem. Pracujemy na urządzeniu EndermoSPEC, które łączy cztery technologie: endermomasaż, falę radiową, kawitację ultradźwiękową i podczerwień. Zabieg wykonujemy bez kombinezonu, bezpośrednio na skórze. Efekty są indywidualne, najlepsze efekty uzyskujemy przy indywidualnie dobranej serii zabiegów."
    }
   },
   {
@@ -1449,7 +1494,7 @@ section[id] { scroll-margin-top: 72px; }
           <li><svg><use href="#i-ok"/></svg>Laser diodowy</li>
           <li><svg><use href="#i-ok"/></svg>Zabiegi wykonują kosmetolodzy</li>
           <li><svg><use href="#i-ok"/></svg>Parking dla klientów za kamienicą</li>
-          <li><svg><use href="#i-ok"/></svg>Płatność kartą</li>
+          <li><svg><use href="#i-ok"/></svg>Płatność kartą, gotówką oraz online</li>
         </ul>
       </div>
       <div class="hero__zdjecie">
@@ -1533,7 +1578,7 @@ section[id] { scroll-margin-top: 72px; }
         <p class="wstep">Ceny zabiegów w salonie Beautiful Skin w Dąbrowie Górniczej. Nie wiesz, co wybrać? Zadzwoń – kosmetolog doradzi pakiet do Twoich potrzeb.</p>
       </div>
 <!-- CENNIK:START -->
-<div class="promocje"><div class="promocja promocja--wyrozniona" data-do="2026-11-01"><span class="promocja__znaczek">Dla nowych klientek</span><span class="promocja__nazwa">Pierwszy zabieg na 2 partie ciała</span><span class="promocja__opis">Depilacja laserowa dwóch wybranych partii ciała na start.</span><span class="promocja__cena"><strong>99&nbsp;zł</strong><s>499&nbsp;zł</s></span><span class="promocja__termin">Promocja do 01.11.2026</span></div><div class="promocja" data-do="2026-11-01"><span class="promocja__znaczek">Bestseller</span><span class="promocja__nazwa">Pakiet Roczny na 4 dowolne partie ciała −30%</span><span class="promocja__opis">9 zabiegów na 4 wybrane partie ciała.</span><span class="promocja__cena"><strong>2&nbsp;999&nbsp;zł</strong><s>4&nbsp;299&nbsp;zł</s></span><span class="promocja__termin">Promocja do 01.11.2026</span></div><div class="promocja" data-do="2026-11-01"><span class="promocja__znaczek">Promocja</span><span class="promocja__nazwa">Pakiet Roczny na całe ciało w cenie 4 partii</span><span class="promocja__opis">9 zabiegów depilacji laserowej całego ciała.</span><span class="promocja__cena"><strong>4&nbsp;299&nbsp;zł</strong><s>6&nbsp;999&nbsp;zł</s></span><span class="promocja__termin">Promocja do 01.11.2026</span></div><div class="promocja" data-do="2026-11-01"><span class="promocja__znaczek">Halloween</span><span class="promocja__nazwa">Zabieg na 4 dowolne partie ciała −50%</span><span class="promocja__opis">Jeden zabieg depilacji laserowej na 4 wybrane partie ciała.</span><span class="promocja__cena"><strong>449&nbsp;zł</strong><s>899&nbsp;zł</s></span><span class="promocja__termin">Promocja do 01.11.2026</span></div><div class="promocja" data-do="2026-11-01"><span class="promocja__znaczek">Urodziny</span><span class="promocja__nazwa">Paczka Urodzinowa −50%</span><span class="promocja__opis">10 zabiegów depilacji laserowej.</span><span class="promocja__cena"><strong>1&nbsp;000&nbsp;zł</strong><s>1&nbsp;999&nbsp;zł</s></span><span class="promocja__termin">Promocja do 01.11.2026</span></div><div class="promocja" data-do="2026-11-01"><span class="promocja__znaczek">Endermologia</span><span class="promocja__nazwa">Endermologia – 10 zabiegów</span><span class="promocja__opis">Dowolna partia ciała. Dla kobiet.</span><span class="promocja__cena"><strong>1&nbsp;000&nbsp;zł</strong><s>1&nbsp;499&nbsp;zł</s></span><span class="promocja__termin">Promocja do 01.11.2026</span></div><div class="promocja"><span class="promocja__znaczek">Na start</span><span class="promocja__nazwa">Konsultacja przed depilacją laserową</span><span class="promocja__opis">Wywiad, kwalifikacja i dobór planu zabiegów.</span><span class="promocja__cena"><strong>1&nbsp;zł</strong></span></div></div><div class="cennik"><div class="cennik__grupa cennik__grupa--szeroka"><h3>Depilacja laserowa – pojedynczy zabieg</h3><p>Cena za jeden zabieg na wybraną partię ciała.</p><ul class="cennik__lista cennik__kolumny"><li data-czesc="Baczki"><span>Baczki<small>dla mężczyzn</small></span><span class="cena">149&nbsp;zł</span></li><li data-czesc="Broda"><span>Broda<small>dla mężczyzn</small></span><span class="cena">149&nbsp;zł</span></li><li data-czesc="Dłonie"><span>Dłonie</span><span class="cena">149&nbsp;zł</span></li><li data-czesc="Linia biała"><span>Linia biała<small>dla kobiet</small></span><span class="cena">149&nbsp;zł</span></li><li data-czesc="Okolice sutków"><span>Okolice sutków<small>dla kobiet</small></span><span class="cena">149&nbsp;zł</span></li><li data-czesc="Podbródek"><span>Podbródek<small>dla kobiet</small></span><span class="cena">149&nbsp;zł</span></li><li data-czesc="Przestrzeń międzypośladkowa"><span>Przestrzeń międzypośladkowa<small>dla mężczyzn</small></span><span class="cena">149&nbsp;zł</span></li><li data-czesc="Stopy"><span>Stopy</span><span class="cena">149&nbsp;zł</span></li><li data-czesc="Wąsik"><span>Wąsik<small>dla kobiet</small></span><span class="cena">149&nbsp;zł</span></li><li data-czesc="Bikini płytkie"><span>Bikini płytkie</span><span class="cena">259&nbsp;zł</span></li><li data-czesc="Brzuch"><span>Brzuch</span><span class="cena">259&nbsp;zł</span></li><li data-czesc="Pachy"><span>Pachy</span><span class="cena">259&nbsp;zł</span></li><li data-czesc="Pośladki"><span>Pośladki</span><span class="cena">259&nbsp;zł</span></li><li data-czesc="Ręce"><span>Ręce</span><span class="cena">259&nbsp;zł</span></li><li data-czesc="Szyja i ramiona"><span>Szyja i ramiona</span><span class="cena">259&nbsp;zł</span></li><li data-czesc="Twarz"><span>Twarz</span><span class="cena">259&nbsp;zł</span></li><li data-czesc="Uda"><span>Uda</span><span class="cena">259&nbsp;zł</span></li><li data-czesc="Łydki"><span>Łydki</span><span class="cena">259&nbsp;zł</span></li><li data-czesc="Bikini głębokie"><span>Bikini głębokie</span><span class="cena">299&nbsp;zł</span></li><li data-czesc="Klatka piersiowa"><span>Klatka piersiowa<small>dla mężczyzn</small></span><span class="cena">299&nbsp;zł</span></li><li data-czesc="Plecy"><span>Plecy<small>dla mężczyzn</small></span><span class="cena">299&nbsp;zł</span></li><li data-czesc="Całe nogi"><span>Całe nogi<small>dla kobiet</small></span><span class="cena"><span data-do="2026-12-31"><s>758&nbsp;zł</s>519&nbsp;zł</span><span data-po="2026-12-31" hidden>758&nbsp;zł</span></span></li><li><span>2 dowolne partie ciała<small>jeden zabieg</small></span><span class="cena"><span data-do="2026-12-31"><s>548&nbsp;zł</s>499&nbsp;zł</span><span data-po="2026-12-31" hidden>548&nbsp;zł</span></span></li><li><span>4 dowolne partie ciała<small>jeden zabieg</small></span><span class="cena"><span data-do="2026-12-31"><s>1&nbsp;076&nbsp;zł</s>899&nbsp;zł</span><span data-po="2026-12-31" hidden>1&nbsp;076&nbsp;zł</span></span></li><li><span>Całe ciało<small>jeden zabieg</small></span><span class="cena"><span data-do="2026-12-31"><s>3&nbsp;237&nbsp;zł</s>1&nbsp;549&nbsp;zł</span><span data-po="2026-12-31" hidden>3&nbsp;237&nbsp;zł</span></span></li></ul></div><div class="cennik__grupa"><h3>Pakiety Roczne</h3><p>Pakiet to 9 zabiegów depilacji laserowej w niższej cenie niż przy płaceniu za każdy zabieg osobno. W cenie Certyfikat Gwarancji Efektów: po serii owłosienia jest nawet do 95% mniej.</p><ul class="cennik__lista"><li><span>1 partia ciała<small>9 zabiegów</small></span><span class="cena">1&nbsp;699&nbsp;zł</span></li><li><span>2 dowolne partie ciała<small>9 zabiegów · osobno 3 498 zł</small></span><span class="cena">2&nbsp;899&nbsp;zł</span></li><li><span>4 dowolne partie ciała<small>9 zabiegów · osobno 6 896 zł</small></span><span class="cena">4&nbsp;299&nbsp;zł</span></li><li><span>Całe ciało (do 13 partii)<small>9 zabiegów · osobno 16 663 zł</small></span><span class="cena">6&nbsp;999&nbsp;zł</span></li><li><span>Dodatkowa mała partia ciała<small>9 zabiegów · osobno 799 zł</small></span><span class="cena">399&nbsp;zł</span></li></ul><h3 style="margin-top:22px">Paczki zabiegów</h3><p>Stała liczba zabiegów w jednej cenie. Szczegóły paczek podamy przy rezerwacji.</p><ul class="cennik__lista"><li><span>Paczka Light<small>6 zabiegów · średnio 215 zł za zabieg</small></span><span class="cena">1&nbsp;290&nbsp;zł</span></li><li><span>Paczka Classic<small>10 zabiegów · średnio 199,90 zł za zabieg</small></span><span class="cena">1&nbsp;999&nbsp;zł</span></li><li><span>Paczka Platinium<small>20 zabiegów · średnio 159,95 zł za zabieg</small></span><span class="cena">3&nbsp;199&nbsp;zł</span></li></ul></div><div class="cennik__grupa"><h3>Endermologia</h3><p>Cena za jeden zabieg lub za pakiet. <a href="#endermologia">Dowiedz się więcej o endermologii.</a></p><ul class="cennik__lista"><li><span>1 dowolna partia ciała</span><span class="cena">149&nbsp;zł</span></li><li><span>Całe nogi: łydki, uda<small>dla kobiet</small></span><span class="cena">199&nbsp;zł</span></li><li><span>Uda + pośladki<small>dla kobiet</small></span><span class="cena">239&nbsp;zł</span></li><li><span>3 partie ciała<small>dla mężczyzn</small></span><span class="cena">269&nbsp;zł</span></li><li><span>Brzuch, uda, pośladki<small>dla kobiet</small></span><span class="cena">269&nbsp;zł</span></li><li><span>Całe ciało<small>dla kobiet</small></span><span class="cena">299&nbsp;zł</span></li></ul></div><div class="cennik__grupa cennik__grupa--szeroka" id="modelowanie-sylwetki"><h3>Modelowanie sylwetki</h3><p>Elektrostymulacja mięśni oraz zabieg łączony z endermologią. Cena za jeden zabieg lub za pakiet 5 zabiegów. <a href="/elektrostymulacja-dabrowa-gornicza/">Dowiedz się więcej o elektrostymulacji.</a></p><ul class="cennik__lista cennik__kolumny"><li><span>Elektrostymulacja mięśni – 1 zabieg<small>modelowanie sylwetki, ok. 30 minut</small></span><span class="cena">149&nbsp;zł</span></li><li><span>Elektrostymulacja mięśni – 5 zabiegów</span><span class="cena">599&nbsp;zł</span></li><li><span>Płaski brzuch / Brazylijskie pośladki – 1 zabieg<small>elektrostymulacja + endermologia, 50 minut</small></span><span class="cena">279&nbsp;zł</span></li><li><span>Płaski brzuch / Brazylijskie pośladki – 5 zabiegów</span><span class="cena">1&nbsp;099&nbsp;zł</span></li></ul></div><div class="cennik__grupa cennik__grupa--szeroka" id="zabiegi-na-twarz"><h3>Zabiegi na twarz</h3><p>Przy zakupie serii zabiegów przysługują rabaty. Zapytaj o szczegóły przy rezerwacji. <a href="/zabiegi-na-twarz-dabrowa-gornicza/">Opisy zabiegów na twarz.</a></p><div class="przewijanie"><table class="tabela-twarz"><thead><tr><th scope="col">Zabieg</th><th scope="col">Twarz</th><th scope="col">Twarz + szyja</th><th scope="col">Twarz, szyja, dekolt</th></tr></thead><tbody><tr><th scope="row">Peeling Jessner Pro</th><td>250&nbsp;zł</td><td>300&nbsp;zł</td><td>350&nbsp;zł</td></tr><tr><th scope="row">Peeling Rozświetlający Oxyage</th><td>250&nbsp;zł</td><td>300&nbsp;zł</td><td>350&nbsp;zł</td></tr><tr><th scope="row">Peeling na Przebarwienia Melanostop</th><td>250&nbsp;zł</td><td>300&nbsp;zł</td><td>350&nbsp;zł</td></tr><tr><th scope="row">Peeling Azelainowy</th><td>250&nbsp;zł</td><td>300&nbsp;zł</td><td>350&nbsp;zł</td></tr><tr><th scope="row">Peeling Oczyszczający</th><td>250&nbsp;zł</td><td>300&nbsp;zł</td><td>350&nbsp;zł</td></tr><tr><th scope="row">BioRePeel – Biostymulacja Skóry</th><td>350&nbsp;zł</td><td>400&nbsp;zł</td><td>450&nbsp;zł</td></tr><tr><th scope="row">BioRePeel Premium</th><td>450&nbsp;zł</td><td>500&nbsp;zł</td><td>550&nbsp;zł</td></tr><tr><th scope="row">Lifting Bez Igieł PRX-T33</th><td>350&nbsp;zł</td><td>400&nbsp;zł</td><td>450&nbsp;zł</td></tr><tr><th scope="row">PRX-T33 Premium</th><td>450&nbsp;zł</td><td>500&nbsp;zł</td><td>550&nbsp;zł</td></tr><tr><th scope="row">Retix C – Terapia Odmładzająca</th><td>350&nbsp;zł</td><td>430&nbsp;zł</td><td>500&nbsp;zł</td></tr><tr><th scope="row">Retix C Premium</th><td>450&nbsp;zł</td><td>530&nbsp;zł</td><td>600&nbsp;zł</td></tr><tr><th scope="row">Ceremonia rozświetlająca Gold &amp; Pearls</th><td>280&nbsp;zł</td><td>320&nbsp;zł</td><td>390&nbsp;zł</td></tr><tr><th scope="row">Ceremonia rozświetlająca Gold &amp; Pearls Exclusive</th><td>330&nbsp;zł</td><td>380&nbsp;zł</td><td>430&nbsp;zł</td></tr><tr><th scope="row">Terapia Mikrobiomu Skóry</th><td>250&nbsp;zł</td><td>280&nbsp;zł</td><td>320&nbsp;zł</td></tr><tr><th scope="row">Mezoterapia mikroigłowa solo</th><td>300&nbsp;zł</td><td>340&nbsp;zł</td><td>380&nbsp;zł</td></tr><tr><th scope="row">Mezoterapia mikroigłowa z ampułką</th><td>430&nbsp;zł</td><td>480&nbsp;zł</td><td>550&nbsp;zł</td></tr><tr class="podtytul"><th colspan="4" scope="colgroup">Dodatkowo do wybranych zabiegów</th></tr><tr><th scope="row">Mezoterapia mikroigłowa solo (dodatek)</th><td>180&nbsp;zł</td><td>220&nbsp;zł</td><td>260&nbsp;zł</td></tr><tr><th scope="row">Mezoterapia mikroigłowa z ampułką (dodatek)</th><td>280&nbsp;zł</td><td>330&nbsp;zł</td><td>380&nbsp;zł</td></tr></tbody></table></div><p class="cennik__uwagi">Pozycje z dopiskiem „dodatek” to mezoterapia mikroigłowa dodawana do wybranego zabiegu. Dobór terapii ustalamy indywidualnie podczas konsultacji.</p></div></div><p class="cennik__uwagi">Ceny podajemy w złotych (brutto), według stanu na 29.10.2026. Promocje trwają ograniczony czas. Cennik ma charakter informacyjny i nie stanowi oferty w rozumieniu Kodeksu cywilnego – szczegóły potwierdzimy przy rezerwacji.</p>
+<div class="promocje"><div class="promocja promocja--wyrozniona" data-do="2026-11-01"><span class="promocja__znaczek">Dla nowych klientek</span><span class="promocja__nazwa">Pierwszy zabieg na 2 partie ciała</span><span class="promocja__opis">Depilacja laserowa dwóch wybranych partii ciała na start.</span><span class="promocja__cena"><strong>99&nbsp;zł</strong><s>499&nbsp;zł</s></span><span class="promocja__termin">Promocja do 01.11.2026</span></div><div class="promocja" data-do="2026-11-01"><span class="promocja__znaczek">Bestseller</span><span class="promocja__nazwa">Pakiet Roczny na 4 dowolne partie ciała −30%</span><span class="promocja__opis">9 zabiegów na 4 wybrane partie ciała.</span><span class="promocja__cena"><strong>2&nbsp;999&nbsp;zł</strong><s>4&nbsp;299&nbsp;zł</s></span><span class="promocja__termin">Promocja do 01.11.2026</span></div><div class="promocja" data-do="2026-11-01"><span class="promocja__znaczek">Promocja</span><span class="promocja__nazwa">Pakiet Roczny na całe ciało w cenie 4 partii</span><span class="promocja__opis">9 zabiegów depilacji laserowej całego ciała.</span><span class="promocja__cena"><strong>4&nbsp;299&nbsp;zł</strong><s>6&nbsp;999&nbsp;zł</s></span><span class="promocja__termin">Promocja do 01.11.2026</span></div><div class="promocja" data-do="2026-11-01"><span class="promocja__znaczek">Halloween</span><span class="promocja__nazwa">Zabieg na 4 dowolne partie ciała −50%</span><span class="promocja__opis">Jeden zabieg depilacji laserowej na 4 wybrane partie ciała.</span><span class="promocja__cena"><strong>449&nbsp;zł</strong><s>899&nbsp;zł</s></span><span class="promocja__termin">Promocja do 01.11.2026</span></div><div class="promocja" data-do="2026-11-01"><span class="promocja__znaczek">Urodziny</span><span class="promocja__nazwa">Paczka Urodzinowa −50%</span><span class="promocja__opis">10 zabiegów depilacji laserowej.</span><span class="promocja__cena"><strong>1&nbsp;000&nbsp;zł</strong><s>1&nbsp;999&nbsp;zł</s></span><span class="promocja__termin">Promocja do 01.11.2026</span></div><div class="promocja" data-do="2026-11-01"><span class="promocja__znaczek">Endermologia</span><span class="promocja__nazwa">Endermologia – 10 zabiegów</span><span class="promocja__opis">Dowolna partia ciała.</span><span class="promocja__cena"><strong>1&nbsp;000&nbsp;zł</strong><s>1&nbsp;499&nbsp;zł</s></span><span class="promocja__termin">Promocja do 01.11.2026</span></div><div class="promocja"><span class="promocja__znaczek">Na start</span><span class="promocja__nazwa">Konsultacja przed depilacją laserową</span><span class="promocja__opis">Wywiad, kwalifikacja i dobór planu zabiegów.</span><span class="promocja__cena"><strong>1&nbsp;zł</strong></span></div></div><div class="cennik"><div class="cennik__grupa cennik__grupa--szeroka"><h3>Depilacja laserowa – pojedynczy zabieg</h3><p>Cena za jeden zabieg na wybraną partię ciała.</p><ul class="cennik__lista cennik__kolumny"><li data-czesc="Baczki"><span>Baczki</span><span class="cena">149&nbsp;zł</span></li><li data-czesc="Broda"><span>Broda</span><span class="cena">149&nbsp;zł</span></li><li data-czesc="Dłonie"><span>Dłonie</span><span class="cena">149&nbsp;zł</span></li><li data-czesc="Linia biała"><span>Linia biała</span><span class="cena">149&nbsp;zł</span></li><li data-czesc="Okolice sutków"><span>Okolice sutków</span><span class="cena">149&nbsp;zł</span></li><li data-czesc="Podbródek"><span>Podbródek</span><span class="cena">149&nbsp;zł</span></li><li data-czesc="Przestrzeń międzypośladkowa"><span>Przestrzeń międzypośladkowa</span><span class="cena">149&nbsp;zł</span></li><li data-czesc="Stopy"><span>Stopy</span><span class="cena">149&nbsp;zł</span></li><li data-czesc="Wąsik"><span>Wąsik</span><span class="cena">149&nbsp;zł</span></li><li data-czesc="Bikini płytkie"><span>Bikini płytkie</span><span class="cena">259&nbsp;zł</span></li><li data-czesc="Brzuch"><span>Brzuch</span><span class="cena">259&nbsp;zł</span></li><li data-czesc="Pachy"><span>Pachy</span><span class="cena">259&nbsp;zł</span></li><li data-czesc="Pośladki"><span>Pośladki</span><span class="cena">259&nbsp;zł</span></li><li data-czesc="Ręce"><span>Ręce</span><span class="cena">259&nbsp;zł</span></li><li data-czesc="Szyja i ramiona"><span>Szyja i ramiona</span><span class="cena">259&nbsp;zł</span></li><li data-czesc="Twarz"><span>Twarz</span><span class="cena">259&nbsp;zł</span></li><li data-czesc="Uda"><span>Uda</span><span class="cena">259&nbsp;zł</span></li><li data-czesc="Łydki"><span>Łydki</span><span class="cena">259&nbsp;zł</span></li><li data-czesc="Bikini głębokie"><span>Bikini głębokie</span><span class="cena">299&nbsp;zł</span></li><li data-czesc="Klatka piersiowa"><span>Klatka piersiowa</span><span class="cena">299&nbsp;zł</span></li><li data-czesc="Plecy"><span>Plecy</span><span class="cena">299&nbsp;zł</span></li><li data-czesc="Całe nogi"><span>Całe nogi</span><span class="cena"><span data-do="2026-12-31"><s>758&nbsp;zł</s>519&nbsp;zł</span><span data-po="2026-12-31" hidden>758&nbsp;zł</span></span></li><li><span>2 dowolne partie ciała<small>jeden zabieg</small></span><span class="cena"><span data-do="2026-12-31"><s>548&nbsp;zł</s>499&nbsp;zł</span><span data-po="2026-12-31" hidden>548&nbsp;zł</span></span></li><li><span>4 dowolne partie ciała<small>jeden zabieg</small></span><span class="cena"><span data-do="2026-12-31"><s>1&nbsp;076&nbsp;zł</s>899&nbsp;zł</span><span data-po="2026-12-31" hidden>1&nbsp;076&nbsp;zł</span></span></li><li><span>Całe ciało<small>jeden zabieg</small></span><span class="cena"><span data-do="2026-12-31"><s>3&nbsp;237&nbsp;zł</s>1&nbsp;549&nbsp;zł</span><span data-po="2026-12-31" hidden>3&nbsp;237&nbsp;zł</span></span></li></ul></div><div class="cennik__grupa"><h3>Pakiety Roczne</h3><p>Pakiet to 9 zabiegów depilacji laserowej w niższej cenie niż przy płaceniu za każdy zabieg osobno. W cenie Certyfikat Gwarancji Efektów: po serii owłosienia jest nawet do 95% mniej.</p><ul class="cennik__lista"><li><span>1 mała partia ciała<small>9 zabiegów</small></span><span class="cena">799&nbsp;zł</span></li><li><span>1 duża partia ciała<small>9 zabiegów</small></span><span class="cena">1&nbsp;699&nbsp;zł</span></li><li><span>2 dowolne partie ciała<small>9 zabiegów · osobno 3 498 zł</small></span><span class="cena">2&nbsp;899&nbsp;zł</span></li><li><span>4 dowolne partie ciała<small>9 zabiegów · osobno 6 896 zł</small></span><span class="cena">4&nbsp;299&nbsp;zł</span></li><li><span>Całe ciało (do 13 partii)<small>9 zabiegów · osobno 16 663 zł</small></span><span class="cena">6&nbsp;999&nbsp;zł</span></li></ul><h3 style="margin-top:22px">Paczki zabiegów</h3><p>Stała liczba zabiegów w jednej cenie. Szczegóły paczek podamy przy rezerwacji.</p><ul class="cennik__lista"><li><span>Paczka Light<small>6 zabiegów · średnio 215 zł za zabieg</small></span><span class="cena">1&nbsp;290&nbsp;zł</span></li><li><span>Paczka Classic<small>10 zabiegów · średnio 199,90 zł za zabieg</small></span><span class="cena">1&nbsp;999&nbsp;zł</span></li><li><span>Paczka Platinium<small>20 zabiegów · średnio 159,95 zł za zabieg</small></span><span class="cena">3&nbsp;199&nbsp;zł</span></li></ul></div><div class="cennik__grupa"><h3>Endermologia</h3><p>Cena za jeden zabieg lub za pakiet. <a href="#endermologia">Dowiedz się więcej o endermologii.</a></p><ul class="cennik__lista"><li><span>1 dowolna partia ciała</span><span class="cena">149&nbsp;zł</span></li><li><span>Całe nogi: łydki + uda</span><span class="cena">199&nbsp;zł</span></li><li><span>Uda + pośladki</span><span class="cena">239&nbsp;zł</span></li><li><span>Brzuch + uda + pośladki</span><span class="cena">269&nbsp;zł</span></li><li><span>Całe ciało</span><span class="cena">299&nbsp;zł</span></li></ul><h3 style="margin-top:22px">Pakiety 5 zabiegów</h3><ul class="cennik__lista"><li><span>1 dowolna partia ciała<small>5 zabiegów · średnio 119,80 zł za zabieg</small></span><span class="cena">599&nbsp;zł</span></li><li><span>Całe nogi: łydki + uda<small>5 zabiegów · średnio 159,80 zł za zabieg</small></span><span class="cena">799&nbsp;zł</span></li><li><span>Uda + pośladki<small>5 zabiegów · średnio 189,80 zł za zabieg</small></span><span class="cena">949&nbsp;zł</span></li><li><span>Brzuch + uda + pośladki<small>5 zabiegów · średnio 219,80 zł za zabieg</small></span><span class="cena">1&nbsp;099&nbsp;zł</span></li><li><span>Całe ciało<small>5 zabiegów · średnio 239,80 zł za zabieg</small></span><span class="cena">1&nbsp;199&nbsp;zł</span></li></ul></div><div class="cennik__grupa cennik__grupa--szeroka" id="modelowanie-sylwetki"><h3>Modelowanie sylwetki</h3><p>Elektrostymulacja mięśni oraz zabieg łączony z endermologią. Cena za jeden zabieg lub za pakiet 5 zabiegów. <a href="/elektrostymulacja-dabrowa-gornicza/">Dowiedz się więcej o elektrostymulacji.</a></p><ul class="cennik__lista cennik__kolumny"><li><span>Elektrostymulacja mięśni – 1 zabieg<small>modelowanie sylwetki, ok. 30 minut</small></span><span class="cena">149&nbsp;zł</span></li><li><span>Elektrostymulacja mięśni – 5 zabiegów</span><span class="cena">599&nbsp;zł</span></li><li><span>Płaski brzuch / Brazylijskie pośladki – 1 zabieg<small>elektrostymulacja + endermologia, 50 minut</small></span><span class="cena">279&nbsp;zł</span></li><li><span>Płaski brzuch / Brazylijskie pośladki – 5 zabiegów</span><span class="cena">1&nbsp;099&nbsp;zł</span></li></ul></div><div class="cennik__grupa cennik__grupa--szeroka" id="zabiegi-na-twarz"><h3>Zabiegi na twarz</h3><p>Przy zakupie serii zabiegów przysługują rabaty. Zapytaj o szczegóły przy rezerwacji. <a href="/zabiegi-na-twarz-dabrowa-gornicza/">Opisy zabiegów na twarz.</a></p><div class="przewijanie"><table class="tabela-twarz"><thead><tr><th scope="col">Zabieg</th><th scope="col">Twarz</th><th scope="col">Twarz + szyja</th><th scope="col">Twarz, szyja, dekolt</th></tr></thead><tbody><tr><th scope="row">Peeling Jessner Pro</th><td>250&nbsp;zł</td><td>300&nbsp;zł</td><td>350&nbsp;zł</td></tr><tr><th scope="row">Peeling Rozświetlający Oxyage</th><td>250&nbsp;zł</td><td>300&nbsp;zł</td><td>350&nbsp;zł</td></tr><tr><th scope="row">Peeling na Przebarwienia Melanostop</th><td>250&nbsp;zł</td><td>300&nbsp;zł</td><td>350&nbsp;zł</td></tr><tr><th scope="row">Peeling Azelainowy</th><td>250&nbsp;zł</td><td>300&nbsp;zł</td><td>350&nbsp;zł</td></tr><tr><th scope="row">Peeling Oczyszczający</th><td>250&nbsp;zł</td><td>300&nbsp;zł</td><td>350&nbsp;zł</td></tr><tr><th scope="row">BioRePeel – Biostymulacja Skóry</th><td>350&nbsp;zł</td><td>400&nbsp;zł</td><td>450&nbsp;zł</td></tr><tr><th scope="row">BioRePeel Premium</th><td>450&nbsp;zł</td><td>500&nbsp;zł</td><td>550&nbsp;zł</td></tr><tr><th scope="row">PRX-T33 Lifting Bez Igieł</th><td>350&nbsp;zł</td><td>400&nbsp;zł</td><td>450&nbsp;zł</td></tr><tr><th scope="row">PRX-T33 Premium</th><td>450&nbsp;zł</td><td>500&nbsp;zł</td><td>550&nbsp;zł</td></tr><tr><th scope="row">Retix C – Terapia Odmładzająca</th><td>350&nbsp;zł</td><td>430&nbsp;zł</td><td>500&nbsp;zł</td></tr><tr><th scope="row">Retix C Premium</th><td>450&nbsp;zł</td><td>530&nbsp;zł</td><td>600&nbsp;zł</td></tr><tr><th scope="row">Ceremonia rozświetlająca Gold &amp; Pearls</th><td>280&nbsp;zł</td><td>320&nbsp;zł</td><td>390&nbsp;zł</td></tr><tr><th scope="row">Ceremonia rozświetlająca Gold &amp; Pearls Exclusive</th><td>330&nbsp;zł</td><td>380&nbsp;zł</td><td>430&nbsp;zł</td></tr><tr><th scope="row">Terapia Mikrobiomu Skóry</th><td>250&nbsp;zł</td><td>280&nbsp;zł</td><td>320&nbsp;zł</td></tr><tr><th scope="row">Mezoterapia mikroigłowa solo</th><td>300&nbsp;zł</td><td>340&nbsp;zł</td><td>380&nbsp;zł</td></tr><tr><th scope="row">Mezoterapia mikroigłowa z ampułką</th><td>430&nbsp;zł</td><td>480&nbsp;zł</td><td>550&nbsp;zł</td></tr><tr class="podtytul"><th colspan="4" scope="colgroup">Dodatkowo do wybranych zabiegów</th></tr><tr><th scope="row">Mezoterapia mikroigłowa solo (dodatek)</th><td>180&nbsp;zł</td><td>220&nbsp;zł</td><td>260&nbsp;zł</td></tr><tr><th scope="row">Mezoterapia mikroigłowa z ampułką (dodatek)</th><td>280&nbsp;zł</td><td>330&nbsp;zł</td><td>380&nbsp;zł</td></tr></tbody></table></div><p class="cennik__uwagi">Pozycje z dopiskiem „dodatek” to mezoterapia mikroigłowa dodawana do wybranego zabiegu. Dobór terapii ustalamy indywidualnie podczas konsultacji.</p></div></div><p class="cennik__uwagi">Ceny podajemy w złotych (brutto), według stanu na 29.10.2026. Promocje trwają ograniczony czas. Cennik ma charakter informacyjny i nie stanowi oferty w rozumieniu Kodeksu cywilnego – szczegóły potwierdzimy przy rezerwacji.</p>
 <!-- CENNIK:KONIEC -->
     </div>
   </section>
@@ -1542,13 +1587,13 @@ section[id] { scroll-margin-top: 72px; }
     <div class="kontener">
       <div class="naglowek-sekcji">
         <span class="etykieta">Krok po kroku</span>
-        <h2 id="kroki-tytul">Jak wygląda kuracja laserem</h2>
+        <h2 id="kroki-tytul">Jak wygląda terapia laserem</h2>
       </div>
       <ol class="kroki">
         <li class="krok"><h3>Umówienie wizyty</h3><p>Dzwonisz lub piszesz do nas. Dostajesz krótkie zalecenia, jak przygotować skórę przed zabiegiem.</p></li>
         <li class="krok"><h3>Wywiad i kwalifikacja</h3><p>Kosmetolog sprawdza przeciwwskazania, ocenia skórę i włosy, odpowiada na pytania.</p></li>
         <li class="krok"><h3>Zabieg</h3><p>Kosmetolog dobiera ustawienia lasera do Twojej skóry i włosów. Czas zabiegu zależy od wybranej partii ciała.</p></li>
-        <li class="krok"><h3>Seria zabiegów</h3><p>Kolejne wizyty co kilka tygodni. Z każdym zabiegiem włosów jest mniej.</p></li>
+        <li class="krok"><h3>Seria zabiegów</h3><p>Wizyty odbywają się co kilka tygodni.</p></li>
       </ol>
     </div>
   </section>
@@ -1669,19 +1714,19 @@ section[id] { scroll-margin-top: 72px; }
       <div class="faq">
         <details>
           <summary>Ile zabiegów depilacji laserowej potrzeba?</summary>
-          <div><p>Depilacja laserowa to seria zabiegów, bo laser działa na włosy w fazie wzrostu, a nie wszystkie rosną w tym samym czasie. Najczęściej potrzeba kilku zabiegów w odstępach kilku tygodni. Dokładną liczbę i odstępy ustala kosmetolog – zależą od partii ciała, rodzaju włosów i gospodarki hormonalnej.</p></div>
+          <div><p>Depilacja laserowa to seria zabiegów, bo laser działa na włosy w fazie wzrostu czyli anagenu, nie wszystkie rosną w tym samym czasie. Najczęściej potrzeba kilku zabiegów w odstępach kilku tygodni. Dokładną liczbę i odstępy ustala kosmetolog – zależą one od partii ciała, rodzaju włosów oraz gospodarki hormonalnej.</p></div>
         </details>
         <details>
           <summary>Czy macie gwarancję efektów depilacji laserowej?</summary>
-          <div><p>Tak. Do każdego Pakietu Rocznego dostajesz bezpłatnie Certyfikat Gwarancji Efektów: po serii 9 zabiegów owłosienia jest nawet do 95% mniej. Warunki: 9 zabiegów na tę samą partię ciała co 4–8 tygodni, stosowanie się do zaleceń przed zabiegiem i po nim, żadnych leków ani terapii, które osłabiają działanie lasera, i informowanie kosmetologa o zmianach w zdrowiu. Laser najlepiej działa na ciemne włosy, jasne i siwe mogą zostać.</p></div>
+          <div><p>Tak. Do każdego Pakietu Rocznego dostajesz bezpłatnie Certyfikat Gwarancji Efektów: po serii 9 zabiegów owłosienia jest nawet do 95% mniej. Warunki: 9 zabiegów na tę samą partię ciała co 4–8 tygodni, stosowanie się do zaleceń przed zabiegiem jak i po nim, żadnych leków ani terapii, które osłabiają działanie lasera, informowanie kosmetologa o zmianach w zdrowiu. Laser najlepiej zadziała na ciemne włosy, laser nie usunie jasnych oraz siwych włosów z uwagi na brak melaniny.</p></div>
         </details>
         <details>
           <summary>Czy depilacja laserowa boli?</summary>
-          <div><p>Każdy odczuwa to trochę inaczej. Najczęściej klientki i klienci mówią o cieple albo lekkim mrowieniu. Kosmetolog ustawia laser pod Twoją skórę i w trakcie zabiegu pyta, czy wszystko w porządku.</p></div>
+          <div><p>Najczęściej klientki i klienci mówią o odczuwanym cieple albo o lekkim mrowieniu. Kosmetolog ustawia parametry indywidualnie pod Twoją skórę i w trakcie zabiegu dba o Twój komfort.</p></div>
         </details>
         <details>
           <summary>Ile kosztuje depilacja laserowa w Dąbrowie Górniczej?</summary>
-          <div><p><!-- FAQ-CENA:START -->Pojedynczy zabieg na małą partię ciała (np. wąsik, dłonie, stopy) kosztuje 149 zł, a na większą (np. pachy, bikini, łydki) 259 zł. Pakiet Roczny – 9 zabiegów na 1 partię ciała – kosztuje 1 699 zł. Konsultacja przed zabiegami kosztuje 1 zł. Pełny cennik i aktualne promocje są w sekcji Cennik na tej stronie, a w razie pytań zadzwoń pod numer 508 421 376.<!-- FAQ-CENA:KONIEC --></p></div>
+          <div><p><!-- FAQ-CENA:START -->Pojedynczy zabieg na małą partię ciała (np. wąsik, dłonie, stopy) kosztuje 149 zł, a na większą (np. pachy, bikini, łydki) 259 zł. Pakiet Roczny – 9 zabiegów na 1 partię ciała – kosztuje 1 699 zł. Konsultacja przed zabiegami kosztuje symbolicznie 1 zł. Pełny cennik i aktualne promocje są w sekcji Cennik na tej stronie, w razie pytań pozostajemy do dyspozycji pod numerem 508 421 376.<!-- FAQ-CENA:KONIEC --></p></div>
         </details>
         <details>
           <summary>Kiedy najlepiej zacząć depilację laserową?</summary>
@@ -1693,7 +1738,7 @@ section[id] { scroll-margin-top: 72px; }
         </details>
         <details>
           <summary>Czy są przeciwwskazania do depilacji laserowej?</summary>
-          <div><p>Tak. Należą do nich między innymi ciąża, świeża opalenizna, przyjmowanie leków światłouczulających oraz stany zapalne i zmiany skórne w miejscu zabiegu. Przed pierwszym zabiegiem kosmetolog przeprowadza wywiad i decyduje o kwalifikacji.</p></div>
+          <div><p>Tak. Zabiegu nie wykonujemy w ciąży ani podczas karmienia piersią. Zabieg odkładamy też na później, gdy występuje: świeża opalenizna, także po solarium lub samoopalaczu; leki światłouczulające, np. retinoidy (kurację trzeba zakończyć co najmniej 6 miesięcy przed zabiegiem), oraz zioła, takie jak dziurawiec, nagietek czy rumianek; wysypka, podrażnienie, stan zapalny, rana albo opryszczka w miejscu zabiegu. Całkowite przeciwwskazania, przy których depilacji laserowej nie wykonujemy: padaczka (epilepsja), choroba nowotworowa, bielactwo, łuszczyca. Przed pierwszym zabiegiem kosmetolog przeprowadza wywiad i decyduje o kwalifikacji.</p></div>
         </details>
         <details>
           <summary>Czy depilacja laserowa jest także dla mężczyzn?</summary>
@@ -1701,7 +1746,7 @@ section[id] { scroll-margin-top: 72px; }
         </details>
         <details>
           <summary>Co to jest endermologia i dla kogo jest ten zabieg?</summary>
-          <div><p>Endermologia to masaż podciśnieniowy skóry i tkanki podskórnej. Poprawia wygląd i jędrność skóry i pomaga wymodelować sylwetkę. Często wybierają ją osoby, które chcą zadbać o skórę z cellulitem. Efekty są indywidualne, a najlepsze daje seria zabiegów. Czy to zabieg dla Ciebie, omówimy na wizycie.</p></div>
+          <div><p>Endermologia to masaż podciśnieniowy skóry i tkanki podskórnej. Poprawia wygląd i jędrność skóry oraz pomaga wymodelować sylwetkę. Często wybierają ją osoby, które chcą zadbać o skórę z widocznym cellulitem. Pracujemy na urządzeniu EndermoSPEC, które łączy cztery technologie: endermomasaż, falę radiową, kawitację ultradźwiękową i podczerwień. Zabieg wykonujemy bez kombinezonu, bezpośrednio na skórze. Efekty są indywidualne, najlepsze efekty uzyskujemy przy indywidualnie dobranej serii zabiegów.</p></div>
         </details>
         <details>
           <summary>Czy do salonu można dojechać z okolicznych miejscowości?</summary>
@@ -1718,9 +1763,9 @@ section[id] { scroll-margin-top: 72px; }
         <h2 id="ender-tytul">Endermologia w Dąbrowie Górniczej</h2>
         <p class="wstep">Endermologia to masaż podciśnieniowy skóry i tkanki podskórnej. Pracujemy na urządzeniu EndermoSPEC, bez kombinezonu. Zabieg ujędrnia i wygładza skórę, pomaga wymodelować sylwetkę i zadbać o skórę z cellulitem.</p>
         <ul class="lista-ok">
-          <li><svg><use href="#i-ok"/></svg>Nie boli, a po zabiegu od razu wracasz do swoich zajęć</li>
+          <li><svg><use href="#i-ok"/></svg>Nie wymaga rekonwalescencji, a po zabiegu od razu wracasz do swoich zajęć</li>
           <li><svg><use href="#i-ok"/></svg>Wykonują go kosmetolodzy</li>
-          <li><svg><use href="#i-ok"/></svg>Można go wykonać na całe ciało albo wybrane partie: brzuch, uda, pośladki, nogi</li>
+          <li><svg><use href="#i-ok"/></svg>Można go wykonać na całe ciało albo wybrane partie: ramiona, plecy, brzuch, pośladki, uda, łydki</li>
           <li><svg><use href="#i-ok"/></svg>Najlepsze efekty daje seria zabiegów, dlatego mamy też pakiety</li>
         </ul>
         <p class="ender__uwaga">Efekty są indywidualne. Czy zabieg jest dla Ciebie odpowiedni i ile zabiegów będzie potrzebnych, omówimy podczas wizyty. <a href="/endermologia-dabrowa-gornicza/">Więcej o endermologii</a>.</p>
@@ -1736,9 +1781,9 @@ section[id] { scroll-margin-top: 72px; }
         </figure>
         <div class="ender__karty">
         <div class="okolica"><h3>Brzuch, uda, pośladki</h3><p>Najczęściej wybierane partie przy modelowaniu sylwetki.</p></div>
-        <div class="okolica"><h3>Całe nogi</h3><p>Łydki i uda w jednym zabiegu.</p></div>
+        <div class="okolica"><h3>Całe nogi</h3><p>Łydki i uda podczas jednego zabiegu.</p></div>
         <div class="okolica"><h3>Całe ciało</h3><p>Wszystkie partie podczas jednej wizyty.</p></div>
-        <div class="okolica"><h3>Pakiety zabiegów</h3><p>Serie 5 i 10 zabiegów, taniej niż pojedynczo.</p></div>
+        <div class="okolica"><h3>Pakiety zabiegów</h3><p>Serie 5 zabiegów, taniej niż pojedynczo.</p></div>
         </div>
       </div>
     </div>
