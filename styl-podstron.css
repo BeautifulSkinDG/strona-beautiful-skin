@@ -47,7 +47,7 @@ h3 { font-size: 1.5rem; }
 p { margin: 0 0 1em; }
 .kontener { width: min(var(--szer), 100% - 32px); margin-inline: auto; }
 .sekcja { padding: clamp(64px, 9vw, 112px) 0; }
-section[id] { scroll-margin-top: 72px; }
+section[id] { scroll-margin-top: 110px; }
 .sekcja--jasna { background: var(--tlo-2); }
 .etykieta {
   display: inline-block;
@@ -111,7 +111,7 @@ section[id] { scroll-margin-top: 72px; }
   .gora__wnetrze { justify-content: flex-start; }
   .gora__wnetrze .social { margin-left: auto; }
   .menu-przycisk { display: inline-flex; }
-  .menu { display: none; position: absolute; top: 100%; left: 0; right: 0; flex-direction: column; gap: 0; background: #fbf9fc; border-bottom: 1px solid var(--linia); box-shadow: 0 14px 28px rgba(60, 30, 90, .14); padding: 8px 16px 16px; max-height: calc(100vh - 80px); overflow-y: auto; }
+  .menu { display: none; position: absolute; top: 100%; left: 0; right: 0; flex-direction: column; gap: 0; background: #fbf9fc; border-bottom: 1px solid var(--linia); box-shadow: 0 14px 28px rgba(60, 30, 90, .14); padding: 8px 16px 16px; max-height: calc(100vh - 120px); overflow-y: auto; }
   .menu.otwarte { display: flex; }
   .menu a { padding: 15px 8px; font-size: 1.05rem; border-bottom: 1px solid var(--linia); white-space: normal; }
   .menu > a:last-of-type { border-bottom: 0; }
@@ -126,6 +126,14 @@ section[id] { scroll-margin-top: 72px; }
 .social--ig { background: linear-gradient(45deg, #f09433 0%, #dc2743 55%, #bc1888 100%); }
 .social--tt { background: #111; }
 .menu__social { display: none; }
+/* Pasek Booksy: kolory i logo jak na booksy.com (ciemne tło, biały napis, turkusowy przycisk #288dac) */
+.pasek-booksy { display: flex; align-items: center; justify-content: center; flex-wrap: wrap; gap: 14px; padding: 7px 16px; background: #151618; color: #fff; font-size: .9rem; font-weight: 600; }
+.pasek-booksy__logo { display: inline-flex; flex: none; color: #fff; }
+.pasek-booksy__logo svg { width: 79px; height: 18px; }
+.pasek-booksy a { color: #fff; }
+.pasek-booksy a.pasek-booksy__przycisk { background: transparent; color: #fff; padding: 5px 16px; border: 2px solid #fff; border-radius: 8px; text-decoration: none; font-weight: 700; white-space: nowrap; transition: background-color .15s ease, color .15s ease; }
+.pasek-booksy a.pasek-booksy__przycisk:hover { background: #fff; color: #151618; }
+.pasek-booksy__profil { color: #c9ced3; text-decoration: underline; text-underline-offset: 3px; white-space: nowrap; }
 .gora__pasek { display: none; align-items: center; justify-content: center; gap: 10px; padding: 6px 16px; background: var(--fiolet-jasny); border-bottom: 1px solid var(--linia); font-size: .85rem; font-weight: 600; color: var(--fiolet-ciemny); }
 .gora__pasek .social a { width: 30px; height: 30px; }
 .gora__pasek .social svg { width: 16px; height: 16px; }
@@ -135,8 +143,10 @@ section[id] { scroll-margin-top: 72px; }
 @media (max-width: 760px) {
   .gora__wnetrze > .social { display: none; }
   .gora__pasek { display: flex; }
-  section[id] { scroll-margin-top: 116px; }
-  .menu { max-height: calc(100vh - 124px); }
+  section[id] { scroll-margin-top: 152px; }
+  .menu { max-height: calc(100vh - 160px); }
+  .pasek-booksy { gap: 10px; padding: 6px 10px; font-size: .82rem; }
+  .pasek-booksy__profil { display: none; }
   .gora__wnetrze .gora__tel { margin-left: auto; }
 }
 @media (max-width: 620px) {
@@ -315,13 +325,13 @@ section[id] { scroll-margin-top: 72px; }
 .tabela-twarz tbody th { font-weight: 600; }
 .tabela-twarz tr.podtytul th { padding-top: 22px; font-family: var(--naglowek); font-size: 1.2rem; color: var(--fiolet-ciemny); border-bottom: 1px solid var(--linia); }
 .przewijanie { overflow-x: auto; }
-#zabiegi-na-twarz { scroll-margin-top: 90px; }
+#zabiegi-na-twarz { scroll-margin-top: 128px; }
 .cennik__uwagi { margin-top: 22px; font-size: .85rem; color: var(--szary); }
 
 .okolica--link { display: block; text-decoration: none; color: inherit; transition: transform .15s ease, border-color .15s ease, box-shadow .15s ease; }
 .okolica--link:hover { transform: translateY(-2px); border-color: var(--fiolet); box-shadow: var(--cien); }
 .okolica__cena { display: inline-block; margin-top: 10px; font-size: .88rem; font-weight: 700; color: var(--fiolet); }
-.cennik__lista li[data-czesc] { scroll-margin-top: 110px; transition: background-color .3s ease; }
+.cennik__lista li[data-czesc] { scroll-margin-top: 148px; transition: background-color .3s ease; }
 .cennik__lista li.podswietl { background: var(--fiolet-jasny); border-radius: 8px; padding-left: 10px; padding-right: 10px; margin-left: -10px; margin-right: -10px; }
 /* Kroki */
 .kroki { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 20px; counter-reset: krok; list-style: none; padding: 0; margin: 0; }
@@ -530,8 +540,8 @@ section[id] { scroll-margin-top: 72px; }
 }
 /* Wyższy nagłówek na telefonie (pasek Obserwuj nas) */
 @media (max-width: 760px) {
-  #zabiegi-na-twarz { scroll-margin-top: 134px; }
-  .cennik__lista li[data-czesc] { scroll-margin-top: 154px; }
+  #zabiegi-na-twarz { scroll-margin-top: 170px; }
+  .cennik__lista li[data-czesc] { scroll-margin-top: 192px; }
 }
 
 /* Podstrony lokalne */
